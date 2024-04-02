@@ -13,7 +13,7 @@ function Lowersidebar() {
         <Plus strokeWidth={2} />
       </div>
       <div className='flex flex-col gap-4 '>
-        <div className='bg-[#121212] rounded-lg p-4 overflow-y-auto max-h-[400px] h-screen'>
+        <div className='bg-[#121212] rounded-lg p-4 overflow-y-auto max-h-[400px] '>
           <div>
             <Playlists />
             <Playlists />
