@@ -16,18 +16,7 @@ function Lowersidebar() {
         <div className='bg-[#121212] rounded-lg p-4 overflow-y-auto max-h-[400px] '>
           <div>
             <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
-            <Playlists />
+            
           </div>
         </div>
       </div>

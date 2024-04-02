@@ -2,10 +2,10 @@ import React from 'react'
 
 function Cards() {
     return (
-        <div className='flex text-black  justify-around '>
-            <div className='bg-red-500 rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg bg-green-500 h-[7rem]  '>
-                    aiufh
+        <div className='flex text-white  justify-around w-auto'>
+            <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
+                <div className='rounded-lg  h-[9rem] bg-white p-5 '>
+                <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>
@@ -13,9 +13,9 @@ function Cards() {
                     <h6>mars and more</h6>
                 </div>
             </div>
-            <div className='bg-red-500 rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg bg-green-500 h-[7rem]  '>
-                    aiufh
+            <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
+                <div className='rounded-lg  h-[9rem] bg-white p-5 '>
+                <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>
@@ -23,9 +23,9 @@ function Cards() {
                     <h6>mars and more</h6>
                 </div>
             </div>
-            <div className='bg-red-500 rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg bg-green-500 h-[7rem]  '>
-                    aiufh
+            <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
+                <div className='rounded-lg  h-[9rem]  bg-white p-5 '>
+                    <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>
@@ -33,9 +33,9 @@ function Cards() {
                     <h6>mars and more</h6>
                 </div>
             </div>
-            <div className='bg-red-500 rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg bg-green-500 h-[7rem]  '>
-                    aiufh
+            <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
+                <div className='rounded-lg  h-[9rem] bg-white p-5 '>
+                <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>
