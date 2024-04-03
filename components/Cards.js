@@ -5,7 +5,7 @@ function Cards() {
         <div className='flex text-white  justify-around w-auto'>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
                 <div className='rounded-lg  h-[9rem] bg-white p-5 '>
-                <img src='vercel.svg'></img>
+                    <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>
@@ -15,7 +15,7 @@ function Cards() {
             </div>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
                 <div className='rounded-lg  h-[9rem] bg-white p-5 '>
-                <img src='vercel.svg'></img>
+                    <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>
@@ -35,7 +35,7 @@ function Cards() {
             </div>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
                 <div className='rounded-lg  h-[9rem] bg-white p-5 '>
-                <img src='vercel.svg'></img>
+                    <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
                     <h1>Daily mix one</h1>

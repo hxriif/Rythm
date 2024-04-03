@@ -72,7 +72,7 @@ const Navbar = () => {
                         <div className='flex gap-5 text-gray-300'>
                             <InstagramIcon className='hover:text-white' />
                             <TwitterIcon className='hover:text-white' />
-                            <FacebookIcon  className='hover:text-white'/>
+                            <FacebookIcon className='hover:text-white' />
                         </div>
                     </div>
                 </div>
@@ -83,8 +83,8 @@ const Navbar = () => {
                         <p>Privacy Policy</p>
                         <p>Cookies</p>
                         <div className=''>
-                        <p>© 2024 Spotify AB</p>
-                    </div>
+                            <p>© 2024 Spotify AB</p>
+                        </div>
                     </div>
                 </div>
                 <div className='flex gap-6 p-5 text-[11px] text-gray-400  '>
