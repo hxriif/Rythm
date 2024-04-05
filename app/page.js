@@ -1,3 +1,5 @@
+import About from "@/components/About";
+import Homepage from "@/components/Homepage";
 import Navbar from "@/components/Navbar";
 import Player from "@/components/Player";
 import Sidebar from "@/components/Sidebar";
@@ -7,12 +9,14 @@ import Sidebar from "@/components/Sidebar";
 export default function Home() {
   return (
     <>
-    <div className="flex h-screen ">
-      <Navbar/>
-    </div>
-    <div className="sticky z-20 bottom-0  w-full   ">
-   {/* <Player/> */}
-    </div>
+        <div>
+          <div className="" >
+          <Navbar /> 
+          </div>
+          <div className="overflow-y-auto max-h-[470px]" >
+            <Homepage/>
+          </div>
+        </div>
     </>
   );
 }

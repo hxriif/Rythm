@@ -1,17 +1,17 @@
-import { AppleIcon } from 'lucide-react'
+import { AppleIcon, ArrowBigRight, ChevronRight, FacebookIcon, InstagramIcon, TwitterIcon } from 'lucide-react'
 import React from 'react'
 
 function Homepage() {
     return (
         <>
-            <div className='text-black   h-auto p-10 text-center bg-blue-300'>
+            <div className='text-[#e3e7f0] opacity-85  h-auto p-10 text-center '>
                 <div >
-                    <h1 className='text-5xl font-extrabold'>Digital Music Distribution Stores</h1>
-                    <h1 className='mt-2 text-1xl font-bold'>TuneCore Music Distribution puts your music in the most popular digital stores around the world like Spotify, Apple Music,</h1>
-                    <h1 className='text-1xl font-bold'>iTunes, Amazon Music, and more. In fact, we partner with over 150 digital stores. Below are just some of our top store partners</h1>
+                    <h1 className='text-5xl font-extrabold'>Digital Music World Famous Platforms</h1>
+                    <h1 className='mt-2 text-1xl font-bold'><span className='font-bold text-red-600'>Rythm</span> Music Distribution puts your music in the most popular digital music platforms around the world like Spotify, Apple Music,</h1>
+                    <h1 className='text-1xl font-bold'>iTunes, Amazon Music, and more. In fact, Below are just some of our top music platforms</h1>
                 </div>
             </div>
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center text-gray-400 '>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-16 h-16' src='apple2.jpg'></img>
                 </div>
@@ -30,7 +30,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-16' src='spotify.jpg'></img>
                 </div>
@@ -50,7 +50,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -71,7 +71,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center text-gray-400 '>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='amazon.png'></img>
                 </div>
@@ -91,7 +91,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='amazon.png'></img>
                 </div>
@@ -109,7 +109,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -131,7 +131,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -154,7 +154,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -175,7 +175,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -195,7 +195,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center text-gray-400 '>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -216,7 +216,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -237,7 +237,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -259,7 +259,7 @@ function Homepage() {
             </div>
 
 
-            <div className=' h-auto p-10 flex gap-5 items-center justify-center '>
+            <div className=' h-auto p-10 flex gap-5 items-center justify-center  text-gray-400'>
                 <div className='flex gap-2'>
                     <img className='rounded-full w-20 h-20' src='youtube.png'></img>
                 </div>
@@ -277,6 +277,30 @@ function Homepage() {
                             <p><span className='font-bold'>Store Types:</span>Streaming,Discovery</p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+
+            <div className='flex justify-evenly text-gray-400  border-t border-neutral-700 mb-20'>
+                <div className='mt-4'>
+                    <h1 className='text-white'>Company</h1>
+                    <h1 className='mt-2'>About</h1>
+                    <h1>Jobs</h1>
+                    <h1>For the Record</h1>
+                </div>
+                <div className='mt-4'>
+                    <h1 className='text-white'>communities</h1>
+                    <h1 className='mt-2'>For Artists</h1>
+                    <h1>Developers</h1>
+                    <h1>Advertising</h1>
+                    <h1>Investors</h1>
+                    <h1>Vendors</h1>
+                </div>
+                <div className='mt-4 '>
+                    <h1 className='text-white'>Usefull Link</h1>
+                    <h1 className='mt-2'>Support</h1>
+                    <h1>Free Mobile</h1>
+                    <h1>App</h1>
                 </div>
             </div>
         </>
