@@ -6,9 +6,10 @@ function Homepage() {
         <>
             <div className='text-[#e3e7f0] opacity-85  h-auto p-10 text-center '>
                 <div >
-                    <h1 className='text-5xl font-extrabold'>Digital Music World Famous Platforms</h1>
+                    <h1 className='text-5xl font-extrabold'>Digital Music,World Famous Platforms</h1>
                     <h1 className='mt-2 text-1xl font-bold'><span className='font-bold text-red-600'>Rythm</span> Music Distribution puts your music in the most popular digital music platforms around the world like Spotify, Apple Music,</h1>
                     <h1 className='text-1xl font-bold'>iTunes, Amazon Music, and more. In fact, Below are just some of our top music platforms</h1>
+                    <h1 className='text-1xl font-bold '>Check it out</h1>
                 </div>
             </div>
             <div className=' h-auto p-10 flex gap-5 items-center justify-center text-gray-400 '>
