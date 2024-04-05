@@ -3,7 +3,7 @@ import { PauseCircleIcon, PlayCircleIcon, Volume1, Volume2, ShuffleIcon, SkipBac
 
 function Player() {
   return (
-    <div className=' bg-black h-[4rem] flex justify-around p-3'>
+    <div className='  flex justify-around p-3'>
       <div>
       </div>
       <div>

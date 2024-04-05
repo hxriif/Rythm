@@ -7,11 +7,11 @@ import Sidebar from "@/components/Sidebar";
 export default function Home() {
   return (
     <>
-    <div className="flex">
-      <Sidebar/>
+    <div className="flex ">
+      {/* <Sidebar/> */}
       <Navbar/>
     </div>
-    <div className="sticky z-20 bottom-0  w-full ">
+    <div className="sticky z-20 bottom-0  w-full   ">
    <Player/>
     </div>
     </>

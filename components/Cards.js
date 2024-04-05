@@ -2,9 +2,9 @@ import React from 'react'
 
 function Cards() {
     return (
-        <div className='flex text-white  justify-around w-auto'>
+        <div className='flex text-white  justify-evenly w-auto '>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg  h-[9rem] bg-white p-5 '>
+                <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                     <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
@@ -14,7 +14,7 @@ function Cards() {
                 </div>
             </div>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg  h-[9rem] bg-white p-5 '>
+                <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                     <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
@@ -24,7 +24,7 @@ function Cards() {
                 </div>
             </div>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg  h-[9rem]  bg-white p-5 '>
+                <div className='rounded-lg  h-[9rem]  bg-black p-5 '>
                     <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
@@ -34,7 +34,7 @@ function Cards() {
                 </div>
             </div>
             <div className=' rounded-lg w-auto h-auto p-2 mt-2 '>
-                <div className='rounded-lg  h-[9rem] bg-white p-5 '>
+                <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                     <img src='vercel.svg'></img>
                 </div>
                 <div className='p-1'>
