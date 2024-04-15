@@ -8,7 +8,7 @@ function Cards() {
                     <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                         <img className='w-20 h-20' src='rythm_logo.jpg'></img>
                     </div>
-                    <div className='p-1 text-black'>
+                    <div className='p-1 text-white'>
                         <h1>Daily mix one</h1>
                         <h3>EMinem,Akon,Bruno</h3>
                         <h6>mars and more</h6>
@@ -18,7 +18,7 @@ function Cards() {
                     <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                         <img className='w-20 h-20' src='rythm_logo.jpg'></img>
                     </div>
-                    <div className='p-1 text-black'>
+                    <div className='p-1 text-white'>
                         <h1>Daily mix one</h1>
                         <h3>EMinem,Akon,Bruno</h3>
                         <h6>mars and more</h6>
@@ -28,7 +28,7 @@ function Cards() {
                     <div className='rounded-lg  h-[9rem]  bg-black p-5 '>
                         <img className='w-20 h-20' src='rythm_logo.jpg'></img>
                     </div>
-                    <div className='p-1 text-black'>
+                    <div className='p-1 text-white'>
                         <h1>Daily mix one</h1>
                         <h3>EMinem,Akon,Bruno</h3>
                         <h6>mars and more</h6>
@@ -38,7 +38,7 @@ function Cards() {
                     <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                         <img className='w-20 h-20' src='rythm_logo.jpg'></img>
                     </div>
-                    <div className='p-1 text-black'>
+                    <div className='p-1 text-white'>
                         <h1>Daily mix one</h1>
                         <h3>EMinem,Akon,Bruno</h3>
                         <h6>mars and more</h6>
