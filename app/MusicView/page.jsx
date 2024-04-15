@@ -14,17 +14,13 @@ function page() {
             <div className='overflow-y-auto max-h-[470px]'>
                  <Cards/>
                  <Cards/>
-
-                 <Cards/>
-
-                 <Cards/>
-
                  <Cards/>
                  <Cards/>
                  <Cards/>
                  <Cards/>
                  <Cards/>
-
+                 <Cards/>
+                 <Cards/>
             </div>
             <div>
                 <Player/>
