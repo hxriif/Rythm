@@ -1,8 +1,6 @@
-import About from "@/components/About";
 import Homepage from "@/components/Homepage";
 import Navbar from "@/components/Navbar";
-import Player from "@/components/Player";
-import Sidebar from "@/components/Sidebar";
+
 
 
 

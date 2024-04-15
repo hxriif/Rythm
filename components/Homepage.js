@@ -8,7 +8,7 @@ function Homepage() {
                 <div >
                     <h1 className='text-5xl font-extrabold'>Digital Music,World Famous Platforms</h1>
                     <h1 className='mt-2 text-1xl font-bold'><span className='font-bold text-red-600'>Rythm</span> Music Distribution shows you the most popular digital music platforms around the world like Spotify, Apple Music,</h1>
-                    <h1 className='text-1xl font-bold'>iTunes, Amazon Music, and more. In fact, Below are just some of our top music platforms</h1>
+                    <h1 className='text-1xl font-bold'>iTunes, Amazon Music, and more. In fact, Below are just some of the top music platforms</h1>
                     <h1 className='text-1xl font-bold '>Check it out</h1>
                 </div>
             </div>

@@ -1,8 +1,5 @@
 import React from 'react'
 import { Home, Search, Plus, Library, Music } from 'lucide-react';
-import Display from './Display';
-import Playlists from './Display';
-import Navbar from './Navbar';
 
 function Lowersidebar() {
   return (
