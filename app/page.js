@@ -1,5 +1,5 @@
-import Homepage from "@/components/Homepage";
-import Navbar from "@/components/Navbar";
+import Homepage from "@/FirstVIew/Homepage";
+import Navbar from "@/FirstVIew/Navbar";
 
 
 
