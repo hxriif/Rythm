@@ -5,15 +5,11 @@ import { ChevronLeft, ChevronRight, Bell, UserRound, LibraryIcon, SearchIcon } f
 function Navbar2() {
   return (
       <div className="flex justify-between    ">
-      <div className="flex gap-2 ">
-        <button className="bg-black rounded-full  p-2 hover:text-green-500">
-          <ChevronLeft strokeWidth={2} />
-        </button>
-        <button className="bg-black rounded-full  p-2 hover:text-green-500">
-          <ChevronRight strokeWidth={2} />
-        </button>
+      <div className="flex gap-2 items-center">
+      <img className='rounded-full w-14 h-14' src='rythm_logo.jpg'></img>
+                <h1 className=' text-2xl font-bold text-red-600 '>𝐑𝐲𝐭𝐡𝐦 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐭𝐟𝐨𝐫𝐦</h1>
       </div>
-      <div className="flex gap-4 items-center  ">
+      <div className="flex gap-4 items-center  me-4 ">
       <div>
        <SearchIcon/>
        </div>
