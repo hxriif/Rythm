@@ -10,18 +10,18 @@ function Navbar2() {
                 <h1 className=' text-2xl font-bold text-red-600 '>𝐑𝐲𝐭𝐡𝐦 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐭𝐟𝐨𝐫𝐦</h1>
       </div>
       <div className="flex gap-4 items-center  me-4 ">
-      <div>
+      <button>
        <SearchIcon/>
-       </div>
-        <div>
+       </button>
+        <button>
        <LibraryIcon/>
-       </div>
-        <div className="p-2">
-          <Bell className='hover:ring-2 rounded-md'/>
-        </div>
-          <div className=" bg-black rounded-full w-fit p-2">
+       </button>
+        <button className="p-2">
+          <Bell/>
+        </button>
+          <button className=" bg-black rounded-full w-fit p-2">
             <UserRound className='hover:dropdown dropdown-end'/>
-          </div>
+          </button>
       </div>
     </div>
   )
