@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight, Bell, UserRound, LibraryIcon, SearchIcon, UserRoundIcon, UserCircle, UserCircle2Icon } from 'lucide-react';
-
+import Link from 'next/link';
 
 function Navbar2() {
 
@@ -20,12 +20,15 @@ const [dropDown,setDropDown]=useState(false)
       {/* <button>
        <SearchIcon/>
        </button> */}
-        <button className='relative' >
+        <button className='relative'>
           {
             dropDown&&(
-              <div className=' top-8 rounded-lg rounded-tr-none h-auto w-32  absolute flex flex-col gap-2'>
-                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40 '>arabic </div>
-                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40 '>english </div>
+              <div className=' top-8 rounded-lg rounded-tr-none h-auto w-32  absolute flex flex-col gap-2  '>
+                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40'>arabic </div>
+                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40'>tamil </div>
+                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40'>malayalm </div>
+                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40'>hindi </div>
+                <div className='text-white p-2 hover:bg-stone-800 bg-opacity-40'>english </div>
 
 
 
@@ -37,9 +40,11 @@ const [dropDown,setDropDown]=useState(false)
         <button className="p-2">
           <Bell/>
         </button>
+        <Link href="/AccountView">
           <button className=" bg-black rounded-full w-fit p-2">
             <UserCircle2Icon className='hover:dropdown dropdown-end'/>
           </button>
+          </Link>
       </div>
     </div>
   )
