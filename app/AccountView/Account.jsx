@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Account() {
@@ -12,9 +13,11 @@ function Account() {
              <h1>email:<span>zaidbnuarifc@gmail.com</span></h1>
           </div>
           <div className=' rounded-lg mt-10 '>
+            <Link href="/Loginpage">
             <button className='p-2 text-red-500 hover:text-red-600'>
                 Sign Out
             </button>
+            </Link>
           </div>
       </div>
     </div>
