@@ -10,10 +10,10 @@ function Navbar2() {
 const [dropDown,setDropDown]=useState(false)
 
   return (
-      <div className="flex justify-between    " >
+      <div className="flex justify-between h-[5rem]   " >
       <div className="flex gap-2 items-center">
       <img className='rounded-full w-14 h-14' src='rythm_logo.jpg'></img>
-                <h1 className=' text-2xl font-bold text-red-600 '>𝐑𝐲𝐭𝐡𝐦 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐭𝐟𝐨𝐫𝐦</h1>
+                <h1 className=' text-3xl font-bold text-red-600 '>𝐑𝐲𝐭𝐡𝐦 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐭𝐟𝐨𝐫𝐦</h1>
       </div>
       <div className="flex gap-4 items-center  me-4 ">
         <input  className='rounded-lg p-1 text-black text-xs '  placeholder='search here '/>
