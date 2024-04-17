@@ -3,7 +3,7 @@ import React from 'react'
 
 function Account() {
   return (
-    <div className='  h-screen w-full flex justify-center items-center'>
+    <div className='  h-screen w-full flex justify-center items-center p-3'>
       <div className=' rounded-lg h-[400px] w-[400px] flex flex-col items-center border border-solid '>
           <div className=' text-white mt-16 h-auto w-auto rounded-full  bg-red-800  '>
               <img className='w-20 h-20  p-2 rounded-full' src='rythm_logo.jpg'/>
