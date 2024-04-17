@@ -4,7 +4,7 @@ import React from 'react'
 function Cards() {
     return (
         <>
-            <div className=' text-red-600  justify-evenly mb-5 '>
+            <div className=' text-red-600  justify-evenly mb-5  '>
                 <div className=' rounded-lg w-auto h-auto p-2 mt-2 flex items-center justify-around'>
                     <div className='rounded-lg  h-[9rem] bg-black p-5 '>
                         <img className='w-20 h-20' src='rythm_logo.jpg'></img>

@@ -10,7 +10,7 @@ function page() {
             <div>
                 <Navbar2 />
             </div>
-            <div className='overflow-y-auto max-h-[510px]'>
+            <div className='overflow-y-auto max-h-[510px] '>
                  <Cards/>
                  <Cards/>
                  <Cards/>
@@ -18,8 +18,7 @@ function page() {
                  <Cards/>
                  <Cards/>
                  <Cards/>
-                 <Cards/>
-                 <Cards/>
+                 
             </div>
             </div>
     )
