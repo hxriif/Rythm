@@ -7,18 +7,8 @@ import Cards from './Cards';
 function page() {
     return (
         <div className=' '>
-            <div>
-                <Navbar2 />
-            </div>
-            <div className='overflow-y-auto max-h-[510px] '>
+            <div className=' '>
                  <Cards/>
-                 <Cards/>
-                 <Cards/>
-                 <Cards/>
-                 <Cards/>
-                 <Cards/>
-                 <Cards/>
-                 
             </div>
             </div>
     )
