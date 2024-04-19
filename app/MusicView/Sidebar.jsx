@@ -1,4 +1,5 @@
-import { HomeIcon, LibraryIcon, PlusIcon } from 'lucide-react'
+import { HomeIcon, LibraryIcon,  PlusIcon } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 function Sidebar() {
@@ -9,7 +10,9 @@ function Sidebar() {
                 <h1 className=' text-x text-blue-500  '>𝐑𝐲𝐭𝐡𝐦 𝐦𝐮𝐬𝐢𝐜 𝐩𝐥𝐚𝐭𝐟𝐨𝐫𝐦</h1>
             </div>
             <div className='text-white bg-[#0f0f0f] flex flex-col rounded-lg p-2   gap-5'>
+            <Link href="/FirstView">
                 <button className='flex gap-3'><HomeIcon strokeWidth={3}/>Home</button>
+            </Link>
                 <button className='flex gap-3'><LibraryIcon strokeWidth={3} /> Library</button>
                 <button className='flex gap-3'><PlusIcon strokeWidth={3}/> create Playlists</button>
             </div>
