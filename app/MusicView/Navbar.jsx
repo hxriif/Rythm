@@ -17,7 +17,7 @@ function Navbar2() {
         <button><HeartIcon/></button> 
         <button><ListIcon/></button>
       </div>
-      <div className='h-full  text-black w-full rounded-b-lg  bg-[#343333] overflow-y-auto '>
+      <div className='h-full  text-black w-full rounded-b-lg  bg-black overflow-y-auto '>
         <MusicCards/>
         <MusicCards/>
         <MusicCards/>

@@ -12,7 +12,7 @@ function Login() {
             {!registration ? (
                 <div className='h-[400px] w-[300px] bg-black rounded-lg flex flex-col items-center gap-5 border border-solid p-3'>
                     <h1 className='text-white font-thin '>Welcome Back to </h1>
-                    <h1 className='text-red-500 font-extrabold text-xl flex items-center '><Music4Icon />Rythm</h1>
+                    <h1 className='text-blue-500 font-extrabold text-xl flex items-center '><Music4Icon />Rythm</h1>
                     <div className='w-full flex flex-col justify-center'>
                         <input className='mt-2 h-10 rounded-lg p-2' placeholder="Email" />
                         <input className='mt-2 h-10 rounded-lg p-2' placeholder="Password" />
@@ -50,7 +50,7 @@ function Login() {
                 : (
                     <div className='h-[400px] w-[300px] bg-black rounded-lg flex flex-col items-center gap-5 border border-solid p-3'>
                         <h1 className='text-white font-thin '>Welcome  to </h1>
-                        <h1 className='text-red-500 font-extrabold text-xl flex items-center '><Music4Icon />Rythm</h1>
+                        <h1 className='text-blue-500 font-extrabold text-xl flex items-center '><Music4Icon />Rythm</h1>
                         <div className='w-full flex flex-col justify-center'>
                             <input className='mt-2 h-10 rounded-lg p-2' placeholder="Username" />
                             <input className='mt-2 h-10 rounded-lg p-2' placeholder="Email" />

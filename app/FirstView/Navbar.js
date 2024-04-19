@@ -8,9 +8,9 @@ const Navbar = () => {
     return (
         <div className='flex  bg-black p-2 justify-end'>
             <div className='items-center flex '>
-                <Music2Icon className='text-red-500' strokeWidth={3} />
+                <Music2Icon className='text-blue-500' strokeWidth={3} />
                 <Link href="/Loginpage">
-                <button><ChevronRight className='text-red-500' strokeWidth={3}  /></button>
+                <button><ChevronRight className='text-blue-500' strokeWidth={3}  /></button>
                 </Link>
             </div>
 
