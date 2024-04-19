@@ -10,8 +10,6 @@ function Login() {
     return (
         <div className='bg-black text-black h-screen w-full flex  justify-center items-center  '>
             {!registration ? (
-
-
                 <div className='h-[400px] w-[300px] bg-black rounded-lg flex flex-col items-center gap-5 border border-solid p-3'>
                     <h1 className='text-white font-thin '>Welcome Back to </h1>
                     <h1 className='text-red-500 font-extrabold text-xl flex items-center '><Music4Icon />Rythm</h1>
