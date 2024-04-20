@@ -26,22 +26,6 @@ function Sidebar() {
                 <p>sldjfldkfjldf</p>
                 <p>sldjfldkfjldf</p>
                 <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
-                <p>sldjfldkfjldf</p>
             </div>
         </div>
     )

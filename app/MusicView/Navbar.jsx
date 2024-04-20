@@ -2,7 +2,7 @@
 
 
 import React, { useState } from 'react'
-import { ChevronLeft, ChevronRight, Bell, UserRound, LibraryIcon, SearchIcon, UserRoundIcon, UserCircle, UserCircle2Icon, HeartIcon, ListIcon } from 'lucide-react';
+import {  HeartIcon, ListIcon } from 'lucide-react';
 import Link from 'next/link';
 import MusicCards from './MusicCards';
 

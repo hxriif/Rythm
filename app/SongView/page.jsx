@@ -3,7 +3,7 @@ import SingleSong from './SingleSong'
 
 function page() {
   return (
-    <div className=''>
+    <div >
             <SingleSong/>
     </div>
   )
