@@ -4,7 +4,12 @@ import React, { useState } from 'react'
 import { AppleIcon, GoogleIcon, Music2Icon, Music4Icon } from 'lucide-react';
 import { FcGoogle } from "react-icons/fc";
 import Link from 'next/link';
+import {signIn} from "next-auth/react"
+
+
+
 function Login() {
+
 
     const [registration, setregistration] = useState(false)
     return (
@@ -35,7 +40,7 @@ function Login() {
                     </div>
                     <div className='flex w-full justify-evenly '>
                         <button className=' '>
-                            <FcGoogle className='text-2xl' />
+                            <FcGoogle onClick={() => signIn('google', { callbackUrl: 'http://localhost:3000/MusicView' })}  className='text-2xl' />
                         </button>
                         <button >
                             <AppleIcon className='text-white ' />
