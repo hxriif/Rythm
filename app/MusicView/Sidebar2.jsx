@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import PlaylistView from './PlaylistView'
 
 
 function Sidebar2() {
@@ -10,8 +11,8 @@ function Sidebar2() {
            <img className='w-36 rounded-full p-2' src='rythm_logo.jpg'/>
            </Link>
         </div>
-        <div className='  mt-2 flex flex-col items-center'>
-             <h1 className='text-xl font-extrabold text-white '>Your Playlists</h1>
+        <div className='  mt-2 flex flex-col items-center h-[26rem]'>
+             <PlaylistView/>
         </div>
     </div>
   )
