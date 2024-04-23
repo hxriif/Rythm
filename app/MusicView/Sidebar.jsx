@@ -10,21 +10,33 @@ function Sidebar() {
                 <h1 className=' text-x text-blue-500  '>𝐑𝐲𝐭𝐡𝐦 </h1>
             </div>
             <div className='text-white  flex flex-col rounded-lg p-2   gap-6 h-full items-center'>
-                <Link href="/FirstView">
-                    <button className='flex gap-3 hover:text-blue-600'><HomeIcon strokeWidth={3} /></button>
-                </Link>
-                <button className='hover:text-blue-600'><LibraryIcon strokeWidth={3} /></button>
-                <button className='hover:text-blue-600'><PlusIcon strokeWidth={3} /> </button>
-                <button className='hover:text-blue-600'><UserCircle strokeWidth={3} /> </button>
-                <Link href="/LikedSongsView">
-                    <button className='hover:text-blue-600'><HeartIcon /></button>  
-                </Link>
+                <div>
+                    <Link href="/FirstView">
+                        <button className='flex gap-3 hover:text-blue-600'><HomeIcon /></button>
+                    </Link>
+                </div>
+                <div>
+                    <button className='hover:text-blue-600'><LibraryIcon /></button>
+                </div>
+                <div>
+                    <button className='hover:text-blue-600'><PlusIcon /> </button>
+                </div>
+                <div>
+                    <button className='hover:text-blue-600'><UserCircle /> </button>
+                </div>
+                <div>
+                    <Link href="/LikedSongsView">
+                        <button className='hover:text-blue-600'><HeartIcon /></button>
+                    </Link>
+                </div>
             </div>
             <div className='flex flex-col items-center  h-full gap-3 '>
                 <Link href="/AccountView">
-               <button> <img className='rounded-full h-14 w-14 mt-8' src='rythm_logo.jpg' /></button>
-               </Link>
-                <LogOutIcon />
+                    <button> <img className='rounded-full h-14 w-14 mt-8' src='rythm_logo.jpg' /></button>
+                </Link>
+                <button>
+                    <LogOutIcon />
+                </button>
             </div>
         </div>
     )
