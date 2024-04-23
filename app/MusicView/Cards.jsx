@@ -9,14 +9,14 @@ function Cards() {
     return (
         <>
             <div className=' flex h-screen  gap-2   p-2  '>
-                <div className='w-[20%] h-full  rounded-lg '>
+                <div className='w-[10%] h-full  rounded-lg  '>
                    <Sidebar/>
                 </div>
-                <div className='w-[60%]    rounded-lg'>
+                <div className='w-[70%]    rounded-lg'>
              <Navbar2/>
                 </div>
-                <div className='w-[20%]   rounded-lg'>
-                <Sidebar2/>
+                <div className='w-[25%] rounded-lg'>
+                  <Sidebar2/>
                 </div>
             </div>
         </>
