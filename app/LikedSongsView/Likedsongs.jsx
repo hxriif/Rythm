@@ -6,7 +6,7 @@ import LikedsongsCards from './LikedsongsCards';
 
 function Likedsongs() {
     return (
-        <div className='text-white h-full w-full  p-3 '>
+        <div className='text-white h-full w-full  p-3  '>
             <div className=' rounded-lg '>
                 <div className='flex gap-4 h-[13rem] p-2 border-b-2 border-cyan-300 '>
                     <div className=' w-48 p-2'>
@@ -20,7 +20,7 @@ function Likedsongs() {
                         </Link>
                     </div>
                 </div>
-                <div className=' overflow-y-auto max-h-[470px]'>
+                <div className=' overflow-y-auto max-h-[470px] mt-3'>
                     <LikedsongsCards/>
                     <LikedsongsCards/>
                     <LikedsongsCards/>
