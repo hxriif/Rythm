@@ -4,7 +4,7 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <div className='h-full w-full flex flex-col   rounded-l-lg gap-9 p-2 bg-slate-800'>
+        <div className='h-full w-full flex flex-col   rounded-l-lg gap-9 p-2 '>
             <div className='flex items-center p-2  text-white rounded-lg flex-col '>
                 <img className='h-10 w-10 rounded-full' src='rythm_logo.jpg' />
                 <h1 className=' text-x text-blue-500  '>𝐑𝐲𝐭𝐡𝐦 </h1>
