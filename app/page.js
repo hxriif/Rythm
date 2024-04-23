@@ -7,7 +7,7 @@ import Navbar from "@/app/FirstView/Navbar";
 export default function Home() {
   return (
     <>
-        <div>
+        <div className="">
           <div className="" >
           <Navbar/> 
           </div>
