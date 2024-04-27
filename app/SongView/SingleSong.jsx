@@ -1,4 +1,4 @@
-import { HeartIcon, PlayCircle, Volume1, Volume2 } from 'lucide-react'
+import { HeartIcon, LucideAudioLines, PlayCircle, PlaySquare, Volume1, Volume2 } from 'lucide-react'
 import React from 'react'
 import Player from '../MusicView/Player'
 
@@ -10,7 +10,7 @@ function SingleSong() {
           <div className='w-[14rem] h-[14rem] '>
             <img className='w-full h-full rounded-lg' src='home_image.webp' />
           </div>
-          <div className='w-[14rem] h-[14rem] rounded--lg  flex flex-col justify-center  '>
+          <div className='w-[14rem] h-[14rem] rounded--lg  flex flex-col justify-center '>
             <p>song</p>
             <p className='font-extrabold' style={{ fontSize: "2rem" }}>Mockingbrid</p>
             <p>artist:<span>mockingbird</span></p>
