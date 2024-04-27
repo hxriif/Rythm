@@ -5,16 +5,16 @@ import React from 'react'
 function LikedsongsCards() {
     return (
         <div className='w-full h-full  p-3 flex gap-5  '>
-           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-10'>
+           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-2'>
             <div className='flex justify-center items-center ms-3'>
                <img className='w-14 h-14 rounded-lg' src='rythm_logo.jpg'/>
             </div>
-            <div className='flex flex-col justify-center '>
+            <div className=' flex flex-col justify-center'>
                 <h1>song name</h1>
                 <h1>artist name</h1>
             </div>
             <div className='flex items-center '>
-                <HeartOff/>
+                <button><HeartOff/></button>
             </div>
                  
            </div>
@@ -27,7 +27,7 @@ function LikedsongsCards() {
                 <h1>artist name</h1>
             </div>
             <div className='flex items-center '>
-                <HeartOff/>
+                <button><HeartOff/></button>
             </div>
            </div>
            <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-10'>
@@ -39,7 +39,7 @@ function LikedsongsCards() {
                 <h1>artist name</h1>
             </div>
             <div className='flex items-center '>
-                <HeartOff/>
+                <button><HeartOff/></button>
             </div>
            </div>
            <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-10'>
@@ -51,7 +51,7 @@ function LikedsongsCards() {
                 <h1>artist name</h1>
             </div>
             <div className='flex items-center '>
-                <HeartOff/>
+                <button><HeartOff/></button>
             </div>
            </div>
         </div>
