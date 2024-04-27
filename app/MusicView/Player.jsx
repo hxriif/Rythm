@@ -1,5 +1,6 @@
 import React from 'react'
-import { PauseCircleIcon, PlayCircleIcon, Volume1, Volume2, ShuffleIcon, SkipBack, SkipForward, HeartPulse, HeartIcon } from 'lucide-react';
+import { PauseCircleIcon, PlayCircleIcon, Volume1, Volume2, ShuffleIcon, SkipBack, SkipForward, HeartPulse, HeartIcon, LucideAudioLines } from 'lucide-react';
+
 
 function Player() {
   return (
@@ -11,8 +12,10 @@ function Player() {
          <button><SkipForward className='w-6 h-6'/></button>
          <button><HeartIcon  className='w-5 h-5'/></button>
        </div>
-       <div>
-
+       <div className=' p-2'>
+       <div className=''>
+          
+       </div>
        </div>
     </div>
   )

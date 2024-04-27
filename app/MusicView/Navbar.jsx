@@ -2,7 +2,7 @@
 
 
 import React, { useState } from 'react'
-import {  HeartIcon, ListIcon } from 'lucide-react';
+import {  BellDot, HeartIcon, ListIcon } from 'lucide-react';
 import Link from 'next/link';
 import MusicCards from './MusicCards';
 import PlaylistCards from './ArtistCards';
