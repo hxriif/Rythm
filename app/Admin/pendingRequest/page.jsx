@@ -3,7 +3,7 @@ import Prequest from './Prequest'
 
 function page() {
   return (
-    <div>
+    <div className='w-screen h-screen'>
       <Prequest/>
     </div>
   )
