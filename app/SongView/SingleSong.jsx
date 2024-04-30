@@ -1,6 +1,6 @@
 import { HeartIcon, LucideAudioLines, PlayCircle, PlaySquare, Volume1, Volume2 } from 'lucide-react'
 import React from 'react'
-import Player from '../MusicView/Player'
+import Player from '../MusicHome/Player'
 
 function SingleSong() {
   return (

@@ -40,7 +40,7 @@ function Login() {
                     </div>
                     <div className='flex w-full justify-evenly '>
                         <button className=' '>
-                            <FcGoogle onClick={() => signIn('google', { callbackUrl: 'http://localhost:3000/MusicView' })}  className='text-2xl' />
+                            <FcGoogle onClick={() => signIn('google', { callbackUrl: 'http://localhost:3000/MusicHome' })}  className='text-2xl' />
                         </button>
                         <button >
                             <AppleIcon className='text-white ' />
