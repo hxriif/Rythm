@@ -9,7 +9,7 @@ function Users() {
                 </div>
                 <div className='flex font-extrabold justify-between p-2 items-center rounded-lg hover:bg-slate-300 bg-slate-500 text-black'>
                     <div>
-                        <img className='w-14 h-14 rounded-full' src='home_image.webp' />
+                        <img className='w-12 h-12 rounded-full' src='home_image.webp' />
                     </div>
                     <div>
                         <h1>#q293jfwjf2384038</h1>
@@ -34,7 +34,7 @@ function Users() {
                 </div>
                 <div className='w-full hover:bg-slate-300 bg-slate-500  flex justify-between p-2 items-center rounded-lg gap-2'>
                     <div className='flex items-center gap-1'>
-                    <img className='w-14 h-14 rounded-full' src='home_image.webp' />
+                    <img className='w-12 h-12 rounded-full' src='home_image.webp' />
                     <h1>Arjun</h1>
                     </div>
                     <div className='flex gap-2'>
