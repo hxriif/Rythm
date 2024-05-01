@@ -27,7 +27,7 @@ function AdminPage() {
                     <div>
                         <button><BellDot /></button>
                     </div>
-                    <button className='mt-5'><LogOutIcon /></button>
+                    <button className=''><LogOutIcon /></button>
                 </div>
             </div>
             <div className='text-black bg-gray-900 h-full w-[85%] rounded-r-lg p-2  '>
