@@ -3,6 +3,7 @@ import React from 'react'
 function MusicUpload() {
     return (
         <div className='w-full h-full flex items-center justify-center '>
+            
             <div className='h-[28rem] w-[28rem] flex flex-col items-center p-2 gap-2 bg-cover bg-center rounded-lg' style={{ backgroundImage: "url('bg.jpg')" }}>                <div className='mt-3 w-full flex justify-center p-2'>
                 <h1 className='font-extrabold text-cyan-500' style={{ fontSize: '20px' }}>Add Your Own Music To Rythm</h1>
             </div>
