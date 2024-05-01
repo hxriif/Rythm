@@ -5,7 +5,7 @@ import React from 'react'
 function LikedsongsCards() {
     return (
         <div className='w-full h-full  p-3 flex gap-5  '>
-           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-2'>
+           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-4'>
             <div className='flex justify-center items-center ms-3'>
                <img className='w-14 h-14 rounded-lg' src='rythm_logo.jpg'/>
             </div>
@@ -18,7 +18,7 @@ function LikedsongsCards() {
             </div>
                  
            </div>
-           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-10'>
+           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-4'>
            <div className='flex justify-center items-center ms-3'>
                <img className='w-14 h-14 rounded-lg' src='rythm_logo.jpg'/>
             </div>
@@ -30,7 +30,7 @@ function LikedsongsCards() {
                 <button><HeartOff/></button>
             </div>
            </div>
-           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-10'>
+           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-4'>
            <div className='flex justify-center items-center ms-3'>
                <img className='w-14 h-14 rounded-lg' src='rythm_logo.jpg'/>
             </div>
@@ -42,7 +42,7 @@ function LikedsongsCards() {
                 <button><HeartOff/></button>
             </div>
            </div>
-           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-10'>
+           <div className='bg-gradient-to-r from-indigo-500 rounded-lg w-[18rem] h-32 text-white flex gap-4'>
            <div className='flex justify-center items-center ms-3'>
                <img className='w-14 h-14 rounded-lg' src='rythm_logo.jpg'/>
             </div>
