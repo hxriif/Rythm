@@ -34,7 +34,7 @@ function SingleSong() {
   return (
     <div className=' h-screen w-full flex justify-center p-2 items-center '>
       {musics.map((music) => (
-        <div className=' w-[30rem] h-[29.8rem] rounded-lg  p-1 bg-slate-500' key={music._id}>
+        <div className=' w-[30rem] h-[29.8rem] rounded-lg  p-1 border' key={music._id}>
           <div className='bg-black h-[300px] p-2 flex  justify-start items-center rounded-lg rounded-b-none gap-3'>
             <div className='w-[14rem] h-[14rem] '>
               <img className='w-full h-full rounded-lg' src={music.image} />
