@@ -4,9 +4,8 @@
 import React, { useState } from 'react';
 import {  Music4Icon } from 'lucide-react';
 import axios from 'axios';
-import { toast } from 'react-toastify';
 import Link from 'next/link';
-
+import toast from 'react-hot-toast';
 
 
 function Register() {
@@ -30,10 +29,13 @@ function Register() {
             const response = await axios.post("http://localhost:3003/api/users/Register", formData);
             if (response.status === 201) {
                 console.log("User registered successfully");
-                toast.success("User registered successfully");
+                toast.success("successfully registered with rythm")
+                
+                
             }
         } catch (error) {
             console.log("Error", error.message);
+            toast.error("Error with registrartion")
         }
     };
 
