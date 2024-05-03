@@ -22,36 +22,34 @@ function Sidebar2() {
           <h1 className='text-right'>Bruno Mars</h1>
         </div>
       </div>
-      {/* <div className='text-white mt-3 gap-2'>
-        <div>
-          <h1 className='font-extrabold text-center lg:text-left' style={{ fontSize: '2rem' }}>Category</h1>
+
+
+      <div className="mt-6">
+        <h1 className="text-white text-lg font-bold">Categories</h1>
+        <div className="flex flex-wrap gap-2 mt-2">
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            Hip Hop
+          </button>
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            House
+          </button>
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            Country
+          </button>
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            Classic
+          </button>
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            Pop
+          </button>
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            Blues
+          </button>
+          <button className="rounded-full bg-black text-white font-bold py-2 px-4 hover:bg-gray-700">
+            Rock
+          </button>
         </div>
-        <div className='flex flex-col gap-3 mt-2 lg:flex-row lg:ms-3'>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>Hip Hop</button>
-          </div>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>House</button>
-          </div>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>Country</button>
-          </div>
-        </div>
-        <div className='flex flex-col gap-3 mt-2 lg:flex-row lg:ms-3'>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>Classic</button>
-          </div>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>Pop</button>
-          </div>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>Blues</button>
-          </div>
-          <div className='rounded-full  bg-black font-extrabold'>
-            <button className='hover:text-slate-300 text-slate-500 '>Rock</button>
-          </div>
-        </div>
-      </div> */}
+      </div>
     </div>
   );
 }
