@@ -24,19 +24,8 @@ function Navbar2() {
                    <PlaylistCards/>
                </div>
       </div>
-      <div className='h-full  text-black w-full rounded-b-lg  bg-black overflow-y-auto mt-2'>
-        <h1 className='text-white ms-3 font-extrabold'>Popular Tracks</h1>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
-        <MusicCards/>
+      <div className='h-full  font-extrabold w-full rounded-b-lg  overflow-y-auto '>
+        <h1 className='text-white ms-4'>Popular songs</h1>
         <MusicCards/> 
       </div>
     </div>
