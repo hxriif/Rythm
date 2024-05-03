@@ -13,8 +13,8 @@ function Navbar2() {
 
   return (
     <div className="flex flex-col  h-full w-full rounded-lg " >
-      <div className="flex gap-4 items-center  h-[5rem]  w-full  justify-center   rounded-lg">
-        <input className='rounded-full p-1 h-8 w-72 text-black text-xs ' placeholder='search here ' />
+      <div className="flex gap-4 items-center  h-[5rem]  w-full  justify-center   rounded-lg ">
+        <input className='rounded-full p-3 h-8 w-72 text-white bg-blue-950 text-xs font-extrabold ' placeholder='search here ' />
       </div>
       <div className=' h-[17rem]'>
                <div className='text-white p-2 ms-3 '>
