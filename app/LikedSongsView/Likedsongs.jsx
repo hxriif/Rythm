@@ -20,7 +20,7 @@ function Likedsongs() {
                         </Link>
                     </div>
                 </div>
-                <div className=' overflow-y-auto max-h-[470px] mt-3'>
+                <div className='  mt-3'>
                     <LikedsongsCards/>
                 </div>
 
