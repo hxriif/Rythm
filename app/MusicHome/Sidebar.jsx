@@ -59,9 +59,11 @@ function Sidebar() {
                 <Link href="/AccountView">
                     <button> <img className='rounded-full h-14 w-14 mt-8' src='rythm_logo.jpg' /></button>
                 </Link>
+                <Link href="/LoginPage">
                 <button>
                     <LogOutIcon />
                 </button>
+                </Link>
             </div>
         </div>
     )
