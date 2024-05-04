@@ -15,26 +15,12 @@ function Likedsongs() {
                     <div className=' p-2 flex flex-col items-start justify-center w-[500px]'>
                         <p className='font-bold'>Playlists</p>
                         <h1 className='font-extrabold ' style={{ fontSize: '4rem' }}>Liked songs</h1>
-                        <Link href='/MusicView'>
+                        <Link href='/MusicHome'>
                         <button><ChevronLeft/></button>
                         </Link>
                     </div>
                 </div>
                 <div className=' overflow-y-auto max-h-[470px] mt-3'>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
-                    <LikedsongsCards/>
                     <LikedsongsCards/>
                 </div>
 
