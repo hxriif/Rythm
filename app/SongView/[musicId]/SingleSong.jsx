@@ -3,7 +3,7 @@
 
 
 import React, { useEffect, useState } from 'react'
-import Player from '../../MusicHome/Player'
+import Player from './Player'
 import { useParams } from 'next/navigation'
 import Axios from '@/app/axios'
 
