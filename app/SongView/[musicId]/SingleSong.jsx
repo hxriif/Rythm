@@ -40,9 +40,9 @@ function SingleSong() {
               <img className='w-full h-full rounded-lg' src={music.image} />
             </div>
             <div className='w-[14rem] h-[14rem] rounded--lg  flex flex-col justify-center '>
-              <p>song</p>
-              <p className='font-extrabold' style={{ fontSize: "2rem" }}>{music.name}</p>
-              <p>{music.artist}:<span>{music.name}</span></p>
+              <h1>song</h1>
+              <h1 className='font-extrabold' style={{ fontSize: "2rem" }}>{music.name}</h1>
+              <h1>{music.artist}:<span>{music.name}</span></h1>
             </div>
           </div>
           <div className='h-[166px]'>
