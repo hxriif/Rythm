@@ -6,6 +6,7 @@ import {  Music4Icon } from 'lucide-react';
 import axios from 'axios';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
 
 function Register() {
@@ -14,6 +15,7 @@ function Register() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [image, setImage] = useState(null);
+    const router=useRouter()
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -27,9 +29,11 @@ function Register() {
 
         try {
             const response = await axios.post("http://localhost:3003/api/users/Register", formData);
+            console.log(response,'ress');
             if (response.status === 201) {
                 console.log("User registered successfully");
                 toast.success("successfully registered with rythm")
+                router.push('/LoginPage')
                 
                 
             }
@@ -38,6 +42,7 @@ function Register() {
             toast.error("Error with registrartion")
         }
     };
+
 
     return (
         <div className='bg-black text-black h-screen w-full flex justify-center items-center'>
@@ -52,7 +57,7 @@ function Register() {
                     <input className='mt-2 h-10 rounded-lg p-2 bg-white w-56' type='file' placeholder="Image" onChange={(event) => setImage(event.target.files[0])} />
                     <div className='flex gap-2 ms-10 mt-4'> 
                     <button className='h-10 text-black font-extrabold bg-slate-500 rounded-xl p-2 mt-2 hover:bg-slate-400' type='submit'>Register</button>
-                    <Link href="/LoginPage ">
+                    <Link href="/LoginPage">
                     <button className='h-10 text-white underline font-extrabold  rounded-xl p-2 mt-2'>SIGN IN</button>
                     </Link>
                     </div>
