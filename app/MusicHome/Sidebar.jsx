@@ -47,7 +47,7 @@ function Sidebar() {
                         <div className="origin-top-right absolute left-0 mt-2 w-32 rounded-md shadow-lg  ring-1 ring-black ring-opacity-5">
                             <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <Link href='/CreatePlaylist'>
-                                    <button className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-100 w-full text-left" role="menuitem">Create Playlist</button>
+                                    <button className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-100 w-full text-left " role="menuitem">Playlist</button>
                                 </Link>
                                 <Link href="/UploadMusic">
                                     <button className="block px-4 py-2 text-sm text-gray-400 hover:bg-gray-100 w-full text-left" role="menuitem">Upload music</button>
