@@ -1,50 +1,68 @@
-import React from 'react'
-
-function Users() {
-    return (
-        <div className='w-full h-full  flex gap-2 p-2'>
-            <div className='bg-slate-700 w-[40rem] rounded-lg overflow-y-auto max-h-full p-2 text-white'>
-                <div className='w-full'>
-                    <h1 className='flex justify-center font-extrabold text-black text-2xl'>Users</h1>
-                </div>
-                <div className='flex font-extrabold justify-between p-2 items-center rounded-lg hover:bg-slate-300 bg-slate-500 text-black'>
-                    <div>
-                        <img className='w-12 h-12 rounded-full' src='home_image.webp' />
-                    </div>
-                    <div>
-                        <h1>#q293jfwjf2384038</h1>
-                    </div>
-                    <div>
-                        <h1>zaidbnuarifc@gmail.com</h1>
-                    </div>
-                    <div>
-                        <h1> harif c</h1>
-                    </div>
-                </div>
-            </div>
+"use client"
 
 
+import React, { useEffect, useState } from 'react';
+import Axios from '../axios';   
+import PendingRequest from './PendingRequest';
 
+const Users = () => {
+  const [users, setUsers] = useState([]);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await Axios.get('/api/admin/allUsers');
+        if (response.status === 200) {
+          setUsers(response.data.data);
+        } else {
+          setError(`Error fetching users: Status code ${response.status}`);
+        }
+      } catch (error) {
+        setError(`Error fetching users: ${error.message}`);
+      }
+    };
 
+    fetchUsers();
+  }, []);
 
-            <div className='w-[25rem] bg-slate-700 rounded-lg p-2 overflow-y-auto max-h-full'>
-                <div className='w-full '>
-                    <h1 className='flex justify-center font-extrabold text-2xl'>Pending Requests</h1>
-                </div>
-                <div className='w-full hover:bg-slate-300 bg-slate-500  flex justify-between p-2 items-center rounded-lg gap-2'>
-                    <div className='flex items-center gap-1'>
-                    <img className='w-12 h-12 rounded-full' src='home_image.webp' />
-                    <h1>Arjun</h1>
-                    </div>
-                    <div className='flex gap-2'>
-                           <button className='p-2 flex items-center justify-center rounded-lg bg-green-600'>Approve</button>
-                           <button className='p-2 flex items-center justify-center rounded-lg bg-red-600'>Reject</button>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="w-full h-full flex gap-2 p-2">
+      {error ? (
+        <div className="bg-red-500 text-white p-2 rounded-md">
+          <p>{error}</p>
         </div>
-    )
-}
+      ) : (
+        <div className="flex gap-1">
+          <div className="bg-slate-700 w-[40rem] rounded-lg overflow-y-auto max-h-full p-2 text-white">
+            <h1 className="flex justify-center font-extrabold text-white text-2xl">Users</h1>
+            {users.map((user) => (
+              <div className="w-full gap-2 mt-2" key={user._id}>
+                <div className="flex font-extrabold justify-between p-2 items-center rounded-lg hover:bg-slate-300 bg-slate-500 text-black">
+                  <div>
+                    <img className="w-12 h-12 rounded-full" src={user.image} />
+                  </div>
+                  <div>
+                    <h1>{user._id}</h1>
+                  </div>
+                  <div>
+                    <h1>{user.email}</h1>
+                  </div>
+                  <div>
+                    <h1>{user.name}</h1>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
 
-export default Users
+         <div className='w-[25rem] overflow-y-auto '>
+          <PendingRequest/>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Users;
