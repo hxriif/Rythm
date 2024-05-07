@@ -1,9 +1,34 @@
+"use client"
+
+
 import { Album, BellDot, CircleAlert, CircleDashed, CircleUserRound, DiscAlbum, LibraryIcon, LogInIcon, LogOutIcon, LucideAlbum, Mic2, MicVocal, MicVocalIcon, Music, Music2, PlaneLandingIcon, UserCircle, } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Users from './Users'
+import Axios from '../axios'
 
 function AdminPage() {
+    
+    const [users,setUsers]=useState([])
+
+    useEffect(()=>{
+        const fetchUsers=async()=>{
+            try {
+                const response=await Axios.get("/api/admin/allUsers")
+                if(response.status===200){
+                    setUsers(response.data.data)
+                }
+            } catch (error) {
+                console.log("error",error);
+            }
+        }
+    fetchUsers()
+
+    },[])
+
+
+
+
     return (
         <div className='h-full w-full p-2 flex  '>
             <div className='text-white bg-black h-full w-[15%] rounded-l-lg '>
@@ -33,43 +58,41 @@ function AdminPage() {
             <div className='text-black bg-gray-900 h-full w-[85%] rounded-r-lg p-2  '>
                 <div className='  flex  p-2 gap-2'>
                     <div className='w-auto h-auto p-2 rounded-lg bg-[#4bc371]'>
-                        <div>
-                            <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Users</span></h1>
-                        </div>
-                        <div className='flex p-2 mt-4 gap-10'>
-                            <button><CircleUserRound className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
-                            <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>1,786</h1>
-                        </div>
-                    </div>
-                    <div className='w-auto h-auto p-2 rounded-lg bg-[#a232a8]'>
-                        <div>
-                            <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Songs</span></h1>
-                        </div>
-                        <div className='flex p-2 mt-4 gap-10'>
+                            <div>
+                                <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Users</span></h1>
+                            </div>
+                            <div className='flex p-2 mt-4 gap-10'>
+                                <button><CircleUserRound className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
+                                <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>1,786</h1>
+                            </div>
+                        </div><div className='w-auto h-auto p-2 rounded-lg bg-[#a232a8]'>
+                                <div>
+                                    <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Songs</span></h1>
+                                </div>
+                                <div className='flex p-2 mt-4 gap-10'>
 
-                            <button><Music className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
+                                    <button><Music className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
 
-                            <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>420</h1>
-                        </div>
-                    </div>
-                    <div className='w-auto h-auto p-2 rounded-lg bg-[#bf8655]'>
-                        <div>
-                            <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Artists</span></h1>
-                        </div>
-                        <div className='flex p-2 mt-4 gap-10'>
-                            <button><Mic2 className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
-                            <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>50</h1>
-                        </div>
-                    </div>
-                    <div className='w-auto h-auto p-2 rounded-lg bg-[#61389e]'>
-                        <div>
-                            <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Pending Requests</span></h1>
-                        </div>
-                        <div className='flex p-2 mt-4 gap-10'>
-                            <button><PlaneLandingIcon className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
-                            <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>20</h1>
-                        </div>
-                    </div>
+                                    <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>420</h1>
+                                </div>
+                            </div><div className='w-auto h-auto p-2 rounded-lg bg-[#bf8655]'>
+                                <div>
+                                    <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Artists</span></h1>
+                                </div>
+                                <div className='flex p-2 mt-4 gap-10'>
+                                    <button><Mic2 className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
+                                    <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>50</h1>
+                                </div>
+                            </div><div className='w-auto h-auto p-2 rounded-lg bg-[#61389e]'>
+                                <div>
+                                    <h1 className='text-white font-extrabold p-2'>Number of <span className=' font-serif'>Pending Requests</span></h1>
+                                </div>
+                                <div className='flex p-2 mt-4 gap-10'>
+                                    <button><PlaneLandingIcon className='  rounded-lg' size={40} strokeWidth={2.75} /></button>
+                                    <h1 className='text-white flex items-center' style={{ fontSize: '2rem' }}>20</h1>
+                                </div>
+                            </div>
+                   
                 </div>
                 <div className=' h-[26rem]'>
                     <Users />
