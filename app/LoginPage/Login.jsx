@@ -40,12 +40,12 @@ function Login() {
             if (response.status === 200) {
                 if (adminEmail && Email === adminEmail) {
                     localStorage.setItem("role", "admin");
-                    localStorage.setItem("Admin jwt", response.data.data);
+                    localStorage.setItem("jwt", response.data.data);
                     toast.success("Login successfull")
                     router.push('/Admin')
 
                 }
-                else {
+                else  {
                     localStorage.setItem("UserId", response.data.data.id);
                     localStorage.setItem("jwt", response.data.data.Token);
                     localStorage.setItem("UserEmail", response.data.data.email);
@@ -64,6 +64,7 @@ function Login() {
 
         } catch (error) {
             console.log(error);
+            toast.error("invalid user input")
         }
 
     }
