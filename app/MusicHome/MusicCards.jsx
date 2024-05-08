@@ -1,6 +1,6 @@
 "use client"
 
-import { HeartIcon, PlayCircle, Volume1, Volume2 } from 'lucide-react'
+import { PlayCircle } from 'lucide-react'
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import Axios from '../axios';
@@ -9,16 +9,16 @@ import { useRouter } from 'next/navigation';
 
 function MusicCards() {
     const [musics, setMusics] = useState([])
-    const router=useRouter()
+    const router = useRouter()
 
-          const handlePassId=(musicId)=>{
-                router.push(`/SongView/${musicId}`)
-          }    
+    const handlePassId = (musicId) => {
+        router.push(`/SongView/${musicId}`)
+    }
 
     useEffect(() => {
         const musicFetch = async () => {
             try {
-                const response = await Axios.get("/api/users/getallMusics"); 
+                const response = await Axios.get("/api/users/getallMusics");
                 if (response.status === 200) {
                     setMusics(response.data.data);
                 }
@@ -42,11 +42,12 @@ function MusicCards() {
                     <div className="p-4">
                         <h3 className="text-white text-lg font-semibold">{music.name}</h3>
                         <p className="text-white text-sm">{music.artist}</p>
-                        <div className="flex items-center mt-2">
-                            <Link href={`/SongView/${music._id}`}> 
+                        <div className="flex items-center mt-2 ">
+
+                            <Link href={`/SongView/${music._id}`}>
                                 <button
                                     className="flex items-center text-white hover:text-gray-300"
-                                    onClick={()=>handlePassId(music._id)} 
+                                    onClick={() => handlePassId(music._id)}
                                 >
                                     <PlayCircle size={20} /> Play Now
                                 </button>
