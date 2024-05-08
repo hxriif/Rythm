@@ -7,7 +7,6 @@ import PendingRequest from './PendingRequest';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -22,15 +21,15 @@ const Users = () => {
         setError(`Error fetching users: ${error.message}`);
       }
     };
-
     fetchUsers();
+    
   }, []);
 
   return (
     <div className="w-full h-full flex gap-2 p-2">
-      {error ? (
-        <div className="bg-red-500 text-white p-2 rounded-md">
-          <p>{error}</p>
+      {users.length<0? (
+        <div className="bg-slate-700  text-white p-2 rounded-md">
+          <p>Error fetching user details</p>
         </div>
       ) : (
         <div className="flex gap-1">
