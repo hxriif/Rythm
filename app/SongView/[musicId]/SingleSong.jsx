@@ -19,7 +19,6 @@ function SingleSong() {
         const response = await Axios.get(`api/users/getmusicByid/${musicId}`)
         if (response.status === 200) {
           setMusics(response.data.data)
-          console.log("music fetcehd successfully")
         }
       } catch (error) {
         console.log(error.message);
