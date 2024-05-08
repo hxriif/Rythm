@@ -2,22 +2,33 @@
 
 import { CreativeCommonsIcon, HeartIcon, HomeIcon, LibraryIcon, LogOutIcon, PlusIcon, PlusSquareIcon, UserCircle } from 'lucide-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import Axios from '../axios';
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [userDetails, setUserDetails] = useState([])
+  const userId = localStorage.getItem("UserId")
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
+  useEffect(() => {
 
-   
+    const fetchUserDetails = async () => {
+      try {
+        const response = await Axios.get(`/api/users/getDetails/${userId}`)
+        if (response.status === 200) {
+          setUserDetails(response.data.data)
+        }
+      } catch (error) {
 
+      }
+    }
+    fetchUserDetails()
 
-    
-
-
+  }, [])
 
     return (
         <div className='h-full w-full flex flex-col   rounded-l-lg gap-9 p-2 '>
@@ -58,16 +69,18 @@ function Sidebar() {
                 </div>
 
             </div>
-            <div className='flex flex-col items-center  h-full gap-3 '>
+            {userDetails.map((user)=>(
+            <div className='flex flex-col items-center   h-auto ' key={user._id}>
                 <Link href="/AccountView">
-                    <button> <img className='rounded-full h-14 w-14 mt-8' src='rythm_logo.jpg' /></button>
+                    <button> <img className='rounded-lg  h-14 w-14 mt-8' src={user.image} /></button>
                 </Link>
-                <Link href="/LoginPage">
+                {/* <Link href="/LoginPage">
                 <button>
                     <LogOutIcon />
                 </button>
-                </Link>
+                </Link> */}
             </div>
+            ))}
         </div>
     )
 }
