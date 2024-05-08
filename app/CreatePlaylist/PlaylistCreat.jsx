@@ -12,10 +12,9 @@ function PlaylistCreat() {
 
     const [Name, setName] = useState("")
     const [Description, setdescription] = useState("")
-    const [Image, setImage] = useState(null)
 
 
-    const payload = { name: Name, description: Description, image: Image }
+    const payload = { name: Name, description: Description}
 
     const playlistCreation = async () => {
         try {
@@ -49,9 +48,6 @@ function PlaylistCreat() {
                 </div>
                 <div>
                     <input className='p-1  rounded-lg w-64 bg-black' type='text' placeholder='description' onChange={(e) => setdescription(e.target.value)} />
-                </div>
-                <div>
-                    <input className='p-1  rounded-lg w-64 bg-black' type='file' placeholder='image' onChange={(e) => setImage(e.target.value)} />
                 </div>
                 <div className='mt-8'>
                     <button className='border rounded-lg p-2 hover:bg-slate-500' onClick={playlistCreation}>Create</button>
