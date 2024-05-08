@@ -9,26 +9,6 @@ import Axios from '../axios'
 
 function AdminPage() {
     
-    const [users,setUsers]=useState([])
-
-    useEffect(()=>{
-        const fetchUsers=async()=>{
-            try {
-                const response=await Axios.get("/api/admin/allUsers")
-                if(response.status===200){
-                    setUsers(response.data.data)
-                }
-            } catch (error) {
-                console.log("error",error);
-            }
-        }
-    fetchUsers()
-
-    },[])
-
-
-
-
     return (
         <div className='h-full w-full p-2 flex  '>
             <div className='text-white bg-black h-full w-[15%] rounded-l-lg '>
