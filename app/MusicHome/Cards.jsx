@@ -15,7 +15,7 @@ function Cards() {
                 <div className='w-[70%]    rounded-lg'>
              <Navbar2/>
                 </div>
-                <div className='w-[25%] rounded-lg'>
+                <div className='w-[20%] rounded-lg '>
                   <Sidebar2/>
                 </div>
             </div>
