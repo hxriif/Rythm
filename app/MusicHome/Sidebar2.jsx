@@ -1,29 +1,23 @@
-import React from 'react';
+"use client"
+
+
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import PlaylistView from './PlaylistView';
+import Axios from '../axios';
 
 function Sidebar2() {
+
+  
+
   return (
     <div className='h-full w-full rounded-r-lg p-3 bg-flex flex-col gap-3 '>
       <div className='flex  mt-16'>
-        <h1 className='text-white font-extrabold text-center lg:text-left' style={{ fontSize: '1rem' }}>Trending artists</h1>
+        <h1 className='text-white font-extrabold text-center lg:text-left' style={{ fontSize: '1rem' }}>your playlists</h1>
       </div>
-      <div className='flex flex-col gap-3 mt-2 font-extrabold text-yellow-300'>
-        <div className='bg-cover bg-center w-full h-14 rounded-lg' style={{backgroundImage: 'url("shallipopi.jpg")'}}>
-          <h1 className='text-right'>Shalli Poppi</h1>
-        </div>
-        <div className='bg-cover bg-center w-full h-14 rounded-lg' style={{backgroundImage: 'url("big.jpg")'}}>
-          <h1 className='text-right'>Big Wizz</h1>
-        </div>
-        <div className='bg-cover bg-center w-full h-14 rounded-lg' style={{backgroundImage: 'url("renee.jpg")'}}>
-          <h1 className='text-right'>renee rapp</h1>
-        </div>
-        <div className='bg-cover bg-center w-full h-14 rounded-lg' style={{backgroundImage: 'url("brunoo.jpg")'}}>
-          <h1 className='text-right'>Bruno Mars</h1>
-        </div>
+      <div className='bg-white h-[15rem]'>
+        <PlaylistView/>
       </div>
-
-
       <div className="mt-6">
         <h1 className="text-white text-lg font-bold">Categories</h1>
         <div className="flex flex-wrap gap-2 mt-2">
