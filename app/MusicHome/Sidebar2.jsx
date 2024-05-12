@@ -2,9 +2,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import PlaylistView from './PlaylistView';
-import Axios from '../axios';
 
 function Sidebar2() {
 
