@@ -18,7 +18,7 @@ const Users = () => {
           setError(`Error fetching users: Status code ${response.status}`);
         }
       } catch (error) {
-        setError(`Error fetching users: ${error.message}`);
+        console.log(`Error fetching users: ${error.message}`);
       }
     };
     fetchUsers();
