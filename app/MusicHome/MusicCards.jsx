@@ -27,12 +27,13 @@ function MusicCards() {
             }
         };
 
-        musicFetch();
+        musicFetch()
     }, []);
 
     return (
         <div className="music-cards-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
-            {musics.map((music) => (
+            {musics.length>0?(
+            musics.map((music) => (
                 <div key={music._id} className="music-card bg-red-950 rounded-lg overflow-hidden shadow-md w-[10rem] ">
                     <img
                         className="w-full h-32 object-cover object-center"
@@ -55,7 +56,13 @@ function MusicCards() {
                         </div>
                     </div>
                 </div>
-            ))}
+            ))
+        ):(
+            <div className='flex h-[15rem] w-[50rem] rounded-lg bg-white items-center justify-center'>
+            <h1 className='text-red-600 font-extrabold'>Login To get Musics</h1>
+            </div>
+        )
+        }
         </div>
     );
 }
