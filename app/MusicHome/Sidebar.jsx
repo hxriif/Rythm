@@ -47,9 +47,11 @@ function Sidebar() {
                         <button className='hover:text-blue-600'><HeartIcon /></button>
                     </Link>
                 </div>
-                <div>
+                {/* <div>
+                    <Link href="/PlaylistView">
                     <button className='hover:text-blue-600'><LibraryIcon /></button>
-                </div>
+                    </Link>
+                </div> */}
                 <div className="relative">
                     <button onClick={toggleDropdown} className="flex items-center hover:text-blue-600 focus:outline-none">
                         <PlusIcon />
