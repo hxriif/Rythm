@@ -37,7 +37,7 @@ function PlaylistView() {
     }
   }
   useEffect(() => {
-    handleDelatePlaylist()
+    handleDeletePlaylist()
   }, [])
 
 
