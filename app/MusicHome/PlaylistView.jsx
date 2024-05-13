@@ -23,7 +23,7 @@ function PlaylistView() {
   }, [])
 
 
-  const handleDelatePlaylist = async (PlaylistId) => {
+  const handleDeletePlaylist = async (PlaylistId) => {
     const playlistId = PlaylistId
     try {
       const response = await Axios.delete(`/api/users/deletePlaylist/${userId}`, { data: { playlistId } })
@@ -53,7 +53,7 @@ function PlaylistView() {
                   <h1 className='text-sm'>Playlist</h1>
                   <button className='font-semibold'>{playlist.name}</button>
                 </div>
-                <button onClick={() => handleDelatePlaylist(playlist._id)}>
+                <button onClick={() => handleDeletePlaylist(playlist._id)}>
                   <Trash2 className='flex justify-end' />
                 </button>
                 <div>
