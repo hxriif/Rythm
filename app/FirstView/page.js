@@ -8,7 +8,7 @@ function page() {
             <div className="" >
                 <Navbar />
             </div>
-            <div className="overflow-y-auto max-h-[470px]" >
+            <div className="" >
                 <Homepage />
             </div>
         </div>
