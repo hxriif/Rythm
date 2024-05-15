@@ -29,16 +29,13 @@ function Register() {
 
         try {
             const response = await axios.post("http://localhost:3003/api/users/Register", formData);
-            console.log(response,'ress');
             if (response.status === 201) {
-                console.log("User registered successfully");
                 toast.success("successfully registered with rythm")
                 router.push('/LoginPage')
                 
                 
             }
         } catch (error) {
-            console.log("Error", error.message);
             toast.error("Error with registrartion")
         }
     };
