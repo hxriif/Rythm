@@ -27,7 +27,6 @@ const handleApproveRequest=async(RequestId)=>{
   try {
     const response=await Axios.post(`/api/admin/approve/${RequestId}`)
     if(response.status===200){
-      console.log("success",response);
       window.location.reload();
 
     }
@@ -43,7 +42,6 @@ const handleRejectRequest=async(RequestId)=>{
 try {
   const response=await Axios.delete(`/api/admin/reject/${RequestId}`)
   if(response.status===200){
-    console.log("successfully rejected pending requests");
     window.location.reload();
   }
   
