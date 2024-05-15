@@ -28,7 +28,6 @@ function PlaylistView() {
     try {
       const response = await Axios.delete(`/api/users/deletePlaylist/${userId}`, { data: { playlistId } })
       if (response.status === 200) {
-        console.log("success");
         toast.success("playlist deleted")
         window.location.reload();
       }
