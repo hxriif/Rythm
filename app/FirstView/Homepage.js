@@ -4,7 +4,7 @@ import React from 'react'
 function Homepage() {
     return (
         <>
-            <div className='text-[#e3e7f0] opacity-85  h-auto p-10 text-center  '>
+            <div className='text-[#e3e7f0] opacity-85  h-full p-10 text-center  '>
                 <div>
                     <h1 className='text-5xl font-extrabold'>Digital Music,World Famous Platforms</h1>
                     <h1 className='mt-2 text-1xl font-bold'><span className='font-extrabold text-blue-500 text-xl'>Rythm</span> Music Distribution shows you the most popular digital music platforms around the world like Spotify, Apple Music,</h1>
