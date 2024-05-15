@@ -35,7 +35,6 @@ function MusicUpload() {
             const response = await Axios.post(`api/users/musicRequest/${userId}`, formData);
             if (response.status === 200) {
                 toast.success("music added to pending request");
-                console.log("successs");
             }
         } catch (error) {
             toast.error("error uploading music");
