@@ -20,7 +20,7 @@ function Login() {
     const handleLogin = async () => {
 
         if (Email === "" || Password === "") {
-            console.log("Input field is empty")
+            toast.error("Input field is empty")
             return
         }
 
