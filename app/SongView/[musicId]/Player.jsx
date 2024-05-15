@@ -16,7 +16,6 @@ function Player() {
     try {
       const response = await Axios.post(`/api/users/addToLikedSongs/${userId}`, { musicId });
       if (response.status === 200) {
-        console.log("Successfully added to liked songs");
         toast.success("Successfully added to liked songs");
       }
     } catch (error) {
@@ -34,7 +33,6 @@ function Player() {
       try {
         const response = await Axios.get(`/api/users/getUserPlaylists/${userId}`);
         if (response.status === 200) {
-          console.log("success", response);
           setPlaylists(response.data.data);
         }
       } catch (error) {
