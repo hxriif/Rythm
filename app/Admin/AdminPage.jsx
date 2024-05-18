@@ -1,11 +1,8 @@
 "use client"
 
 
-import { Album, BellDot, CircleAlert, CircleDashed, CircleUserRound, DiscAlbum, LibraryIcon, LogInIcon, LogOutIcon, LucideAlbum, Mic2, MicVocal, MicVocalIcon, Music, Music2, PlaneLandingIcon, UserCircle, } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
+import { BellDot,  CircleUserRound,LibraryIcon,LogOutIcon,Mic2,MicVocalIcon, Music,PlaneLandingIcon, UserCircle, } from 'lucide-react'
 import Users from './Users'
-import Axios from '../axios'
 
 function AdminPage() {
     
